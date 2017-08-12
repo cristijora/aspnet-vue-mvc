@@ -96,6 +96,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".babelrc" />
     <Content Include=".gitignore" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -106,7 +107,12 @@
     <Content Include="Global.asax" />
     <Content Include="package.json" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\app\about\index.js" />
+    <Content Include="Scripts\app\home\FirstComponent.vue" />
     <Content Include="Scripts\app\home\index.js" />
+    <Content Include="Scripts\app\layout\index.js" />
+    <Content Include="Scripts\bundle\about.js" />
+    <Content Include="Scripts\bundle\home.js" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -118,7 +124,6 @@
   <ItemGroup>
     <Folder Include="Content" />
     <Folder Include="Models" />
-    <Folder Include="Scripts\bundle" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

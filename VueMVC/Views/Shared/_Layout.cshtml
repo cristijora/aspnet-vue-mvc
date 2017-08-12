@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -6,9 +7,9 @@
   <title>@ViewData["Title"] - WebApplication</title>
 </head>
 <body>
- Hello!
 @RenderBody()
 
+@Scripts.Render("~/Scripts/bundle/layout.js")
 @RenderSection("scripts", required: false)
 </body>
 </html>
