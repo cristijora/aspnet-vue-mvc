@@ -1,7 +1,13 @@
-﻿@{
+﻿@using System.Web.Optimization
+@{
   ViewBag.Title = "Home Page";
 }
 
 <div id="app">
   <h3>@ViewBag.Message</h3>
+  {{ vueMessage }}
 </div>
+
+@section scripts {
+  @Scripts.Render("~/Scripts/bundle/home.js")
+}
